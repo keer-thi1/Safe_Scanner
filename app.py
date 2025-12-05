@@ -12,7 +12,7 @@ CORS(app)
 @app.route("/")
 def home():
     return render_template("index.html")
-
+             
 @app.route("/about")
 def about():
     return render_template("about.html")
@@ -215,6 +215,6 @@ def open_browser():
     
 
 if __name__ == "__main__":
-    print("🚀 Cyber Scanner backend running at http://127.0.0.1:5000")
+    print("Cyber Scanner backend running at http://127.0.0.1:5000")
     threading.Timer(1.5, open_browser).start()
     app.run(host="127.0.0.1", port=5000, debug=True)
